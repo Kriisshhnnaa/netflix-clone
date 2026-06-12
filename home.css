@@ -1,0 +1,302 @@
+body
+{
+    margin: 0;
+    padding-top: 64px;
+    margin-left: 51.2px;
+    font-family: "Roboto", serif;
+    background-color: #141414;
+    color: white;
+}
+.navbar
+{
+    height: 64px;
+    width: 100%;
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    margin-left: -51.2px;
+    z-index: 1 ;
+}
+.options
+{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 51.2px;
+}
+.icons
+{
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 51.2px;
+}
+.navbar a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 450;
+    font-size: 0.9rem;
+}
+.options a:hover
+{
+    color: #cccccc;
+}
+.icons i
+{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.heading
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f0f0f0;
+    margin-top: 3rem;
+}
+.cards-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    
+    width: 100%;
+    overflow-x: auto;
+    width: 100%;
+}
+.cards-container::-webkit-scrollbar 
+{
+    display: none;
+}
+.card
+{
+    height: 10rem;
+    width: 17rem;
+    position: relative; 
+}
+.red-badge
+{   
+    background-color: #E50914;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+.recent-new_season
+{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+.top    
+{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    border-top-right-radius: 0 ;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.card img
+{
+    height: 10rem;
+    width: 17rem;
+    display: block;
+    object-fit: fill;
+}
+.game-card
+{
+    height: 14rem;
+    width: 10rem;
+    border-radius: 18px;
+    position: relative;
+}
+.game-card img
+{
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    object-fit: fill;
+    border-radius: 18px;
+}
+.game-name
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.footer
+{
+    margin: 7rem 20rem 2rem 10rem;
+}
+.socialmedia
+{
+    display: flex;
+    gap: 1.8rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+.socialmedia i 
+{
+    cursor: pointer;
+}
+.foot-cols
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem ;
+    
+}
+.column a
+{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #d9d9d9;
+}
+.column a:hover
+{
+    text-decoration: underline;
+}
+.service-btn
+{
+    border: 1px solid #d9d9d9;
+    width: fit-content;
+    margin-top: 1.7rem;
+    padding: 7px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+.service-btn:hover
+{
+    color: white;
+}
+.lastline
+{
+    font-size: 0.7rem;
+    padding-top: 2rem;
+    cursor: default;
+}
+
+.box
+{
+    height: 100vh;
+    background: url(https://youtu.be/85z53bAebsI);
+}
+/* Tablet */
+@media (max-width: 1024px)
+{
+    body
+    {
+        margin-left: 20px;
+    }
+
+    .navbar
+    {
+        margin-left: -20px;
+    }
+
+    .options
+    {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .icons
+    {
+        width: 25%;
+        margin-right: 20px;
+    }
+
+    .footer
+    {
+        margin: 5rem 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px)
+{
+    body
+    {
+        margin-left: 10px;
+        padding-top: 120px;
+    }
+
+    .navbar
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        margin-left: -10px;
+    }
+
+    .options,
+    .icons
+    {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .card
+    {
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .card img
+    {
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .game-card
+    {
+        width: 8rem;
+    }
+
+    .game-card img
+    {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .footer
+    {
+        margin: 4rem 1rem;
+    }
+
+    .foot-cols
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .socialmedia
+    {
+        justify-content: center;
+    }
+}

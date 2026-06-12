@@ -1,0 +1,197 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    color: white;
+    background-color: black;
+}
+.box
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('images/netflix_login_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header
+{
+    height: 90px;
+    padding: 0 140px 0 140px;
+    display: flex;
+    align-items: center;
+}
+.content
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20rem;
+    min-height: 38rem;
+    margin: 0 auto;
+    padding: 1rem 4rem ;
+    box-sizing: border-box;
+}
+.email-btn
+{
+    height: 3rem;
+    background:transparent;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 200;
+    color: #cccccc;
+    padding-left: 0.7rem;
+    margin: 0.2rem 0;
+}
+.red-btn    
+{
+   
+    height: 2.5rem;
+    margin-top: 0.2rem ;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 525;
+    cursor: pointer;
+}
+.red-btn:hover
+{
+    background-color: #B00710;
+}
+.transparent-btn
+{
+    height: 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 525;
+    cursor: pointer;
+}
+.transparent-btn:hover
+{
+    background: rgba(255, 255, 255, 0.1);
+}
+.forgot-link
+{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.forgot-link:hover
+{
+    color: #cccccc;
+    text-decoration: underline;
+}
+#sign-up-link
+{
+    text-decoration: none; 
+    color: white;
+}
+#sign-up-link:hover
+{
+    text-decoration: underline;
+}
+.footer
+{
+    margin-top: 15rem;
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-bottom: 5rem;
+}
+.footer-cols
+{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.section
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+.section a
+{
+    text-decoration: underline;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+#number 
+{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 1.05rem;
+}
+#number:hover
+{
+    text-decoration: underline;
+}
+.dropdown
+{
+    height: 2rem;
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #1e1e1e;
+    margin-right: 7px;
+    margin-top: 2rem;
+}
+.dropdown option
+{
+    color: black;
+}
+/* Tablet */
+@media (max-width: 1024px)
+{
+    .header,
+    .footer
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px)
+{
+    .header
+    {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .content
+    {
+        width: min(90%, 400px);
+        padding: 2rem;
+        min-height: auto;
+        box-sizing: border-box;
+    }
+
+    .footer
+    {
+        margin-top: 3rem;
+        padding: 20px;
+    }
+
+    .footer-cols
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .dropdown
+    {
+        width: 100%;
+    }
+}
